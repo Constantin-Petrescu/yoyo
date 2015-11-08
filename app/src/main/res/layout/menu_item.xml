@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content" android:layout_margin="5dp">
+
+    <ImageView
+        android:id="@+id/menu_image"
+        android:src="@drawable/starbucks_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"/>
+
+    <!--<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">-->
+
+    <TextView
+        android:id="@+id/menu_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textAppearance="?android:attr/textAppearanceListItemSmall"
+        android:text="Item name" />
+
+    <TextView
+        android:id="@+id/menu_cost"
+        android:textStyle="italic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textAppearance="?android:attr/textAppearanceListItemSmall"
+        android:text="Cost" />
+
+    <!--</RelativeLayout>-->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_margin="5dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        >
+
+
+        <Button
+            android:id="@+id/Negative"
+            android:textStyle="italic"
+            android:layout_alignParentLeft="true"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceListItemSmall"
+            android:text="-" />
+
+        <TextView
+            android:id="@+id/menu_quantity"
+            android:textStyle="italic"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textAppearance="?android:attr/textAppearanceListItemSmall"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/Positive"
+            android:textStyle="italic"
+            android:layout_alignParentRight="true"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textAppearance="?android:attr/textAppearanceListItemSmall"
+            android:text="+" />
+    </LinearLayout>
+</LinearLayout>
